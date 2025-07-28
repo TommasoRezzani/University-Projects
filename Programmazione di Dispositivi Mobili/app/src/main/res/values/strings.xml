@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name" translatable="false">Verbose</string>
+    <string name="google_login">Accedi con google</string>
+    <string name="welcome_text">Benvenuto!</string>
+    <string name="welcome_bottom_text">Esegui il login con Google per iniziare ad usare l\'app</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="default_web_client_id" translatable="false">903548378387-oke35mdj9urahh9idk9t2l0tdgaf1ast.apps.googleusercontent.com</string>
+    <string name="missing_google_account">Non sono presenti account Google sul telefono</string>
+    <string name="home_title" translatable="false">Home</string>
+    <string name="list_title">Prenotazioni</string>
+    <string name="profile_title">Profilo</string>
+    <string name="notifications_title">Notifiche</string>
+    <string name="google_signup">Registrati con Google</string>
+    <string name="registration_title">Completa il form per registrarti</string>
+    <string name="complete_account">Completa il tuo account</string>
+    <string name="search_hint">Cerca su Verbose</string>
+    <string name="greetings_text">Ciao, %1$s!</string>
+    <string name="time_range_text" translatable="false">%1$d - %2$d</string>
+    <string name="missing_title_error">Inserisci il titolo!</string>
+    <string-array name="languages">
+        <item><string name="it">it</string></item>
+        <item><string name="en">en</string></item>
+    </string-array>
+    <string name="appointment_request_title">%1$s: richiesta di ripetizione"</string>
+    <string name="appointment_request_content">%1$s ha richiesto una ripetizione per il %2$s alle %3$s:00.\n%4$s</string>
+    <string name="incoming_title">%1$s inizierà alle %2$s:00</string>
+    <string name="incoming_content">La tua ripetizione con %1$s inizierà tra meno di 2 ore!</string>
+    <string name="deleted_title">%1$s: ripetizione cancellata</string>
+    <string name="deleted_content">%1$s ha cancellato la ripetizione del %2$s delle %3$s:00</string>
+    <string name="confirmed_title">%1$s: richiesta confermata</string>
+    <string name="confirmed_content">%1$s ha confermato la ripetizione del %2$s delle %3$s:00</string>
+    <string name="refused_title">%1$s: richiesta rifiutata</string>
+    <string name="refused_content">%1$s ha rifiutato la richiesta di ripetizione del %2$s delle %3$s:00</string>
+    <string name="closed_title">%1$s: la ripetizione è stata chiusa</string>
+    <string name="closed_content">Ora puoi lasciare la tua recensione!</string>
+    <string name="delete_appointment_positive">Conferma</string>
+    <string name="delete_appointment_negative">Annulla</string>
+    <string name="modifica_profilo">Modifica Profilo</string>
+    <string name="lista_ripetizioni_offerte">Lista Ripetizioni Offerte</string>
+    <string name="profile_settings_title">Impostazioni</string>
+    <string name="logout" translatable="false">Logout</string>
+    <string name="notification_title">Notifiche</string>
+    <string name="no_notification_present">Nessuna notifica presente</string>
+    <string name="forgotten_password">Hai dimenticato la password?</string>
+    <string name="change_password_button_text">cambia password</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="password_hint" translatable="false">Password</string>
+    <string name="e_mail_hint" translatable="false">E-mail</string>
+    <string name="no_account">Non hai un account?</string>
+    <string name="register">Registrati</string>
+    <string name="notification_content_placeholder" translatable="false">Testo notifica</string>
+    <string name="notification_title_placeholder" translatable="false">Titolo notifica</string>
+    <string name="client_name_placeholder" translatable="false">ClientName</string>
+    <string name="repetition_name_placeholder" translatable="false">RepetitionName</string>
+    <string name="cancella_appuntamento">Cancella appuntamento</string>
+    <string name="radio_button" translatable="false">RadioButton</string>
+    <string name="select_date_time">Scegli data e ora</string>
+    <string name="date" translatable="false">Date</string>
+    <string name="tutorings_list">Lista Prenotazioni</string>
+    <string name="sent">Inviate</string>
+    <string name="received">Ricevute</string>
+    <string name="username_label" translatable="false">Username</string>
+    <string name="first_name">Nome</string>
+    <string name="last_name">Cognome</string>
+    <string name="bio" translatable="false">Bio</string>
+    <string name="profile_description">Descrizione del profilo</string>
+    <string name="done_btn">Fatto</string>
+    <string name="settings_title">Impostazioni</string>
+    <string name="privacy_disclamer">No Spam, promesso! Accettando le notifiche, ti invieremo informazioni utili per la tua esperienza in app</string>
+    <string name="enable_notifications">Abilita notifiche</string>
+    <string name="select_language">Seleziona lingua</string>
+    <string name="time_format" translatable="false">%1$s:00</string>
+    <string name="date_format" translatable="false">%1$s</string>
+    <string name="confirm_appointment">Conferma</string>
+    <string name="create_repetition_title">Titolo</string>
+    <string name="time_slot_start">Inizio</string>
+    <string name="time_slot_end">Fine</string>
+    <string name="time_slots_error">Errore orario</string>
+    <string name="time_slots_range">Orario</string>
+    <string name="add_repetition_category">Categoria</string>
+    <string name="add_offert">Crea la tua ripetizione!</string>
+    <string name="select_category_error">Seleziona una categoria</string>
+    <string name="repeat_password">Ripeti password</string>
+    <string name="retrieve_password">Recupero Password</string>
+    <string name="lro_category_placeholder">Categoria</string>
+    <string name="delete_notification_content_description">Cancella notifica</string>
+    <string name="refuse_appointment">Rifiuta</string>
+    <string name="search_row_repetition_name_placeholder" translatable="false">NomeMateria</string>
+    <string name="search_row_username_placeholder" translatable="false">Username</string>
+    <string name="time_slot_placeholder" translatable="false">17:00</string>
+    <string name="select_subjects">Seleziona le materie che ti interessano</string>
+    <string name="with_format">Con %1$s</string>
+    <string name="leave_review">Lascia la tua recensione!</string>
+    <string name="delete_confirmation_string">Sei sicuro di voler cancellare questo appuntamento?</string>
+    <string name="requests_cnt_format">%1$d utenti</string>
+    <string name="review_cnt_format">%1$d recensioni</string>
+    <string name="modify_review">Modifica recensione</string>
+    <string name="registration_completed_title">Appuntamento registrato con successo</string>
+    <string name="no_reviews_text">Nessuna recensione presente</string>
+    <string name="wrong_email_or_password">Email o password errata!</string>
+    <string name="no_connection_error">Errore di connessione al server.\nRiprova più tardi</string>
+    <string name="password_reset_helper">Inserisci qui sotto la tua email.\nA breve invieremo un link con le istruzioni per il reset della password.</string>
+    <string name="send">Invia</string>
+    <string name="not_an_account">Account non esistente</string>
+    <string name="invaild_email">Email non valida</string>
+    <string name="short_password">Password troppo corta</string>
+    <string name="password_not_equal">Le password non coincidono</string>
+    <string name="no_appointments">Nessun appuntamento presente</string>
+    <string name="closed">Chiuse</string>
+    <string name="registration_failed_text">Errore nella creazione dell\' appuntamento:\n%1$s</string>
+    <string name="open">Aperte</string>
+    <string name="repetiton_delete_confirmation">\"Sei sicuro di voler chiudere questa ripetizione?\"</string>
+    <string name="username_taken">Username già in uso</string>
+    <string name="email_taken">Email già in uso</string>
+</resources>

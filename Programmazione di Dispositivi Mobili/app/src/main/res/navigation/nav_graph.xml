@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.verbose.ui.mainApp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_newRepetitionFragment"
+            app:destination="@id/newRepetitionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_addAppointmentFragment"
+            app:destination="@id/addAppointmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.verbose.ui.mainApp.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_modificaProfiloFragment"
+            app:destination="@id/modificaProfiloFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_lroProfiloFragment"
+            app:destination="@id/lroProfiloFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_impostazioniProfiloFragment"
+            app:destination="@id/impostazioniProfiloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentsListFragment"
+        android:name="com.example.verbose.ui.mainApp.AppointmentsListFragment"
+        android:label="fragment_appointments_list"
+        tools:layout="@layout/fragment_appointments_list" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.verbose.ui.mainApp.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/newRepetitionFragment"
+        android:name="com.example.verbose.ui.mainApp.NewRepetitionFragment"
+        android:label="fragment_new_repetition"
+        tools:layout="@layout/fragment_new_repetition" />
+    <fragment
+        android:id="@+id/modificaProfiloFragment"
+        android:name="com.example.verbose.ui.mainApp.ModificaProfiloFragment"
+        android:label="fragment_modifica_profilo"
+        tools:layout="@layout/fragment_modifica_profilo" />
+    <fragment
+        android:id="@+id/lroProfiloFragment"
+        android:name="com.example.verbose.ui.mainApp.LroProfiloFragment"
+        android:label="fragment_lro_profilo"
+        tools:layout="@layout/fragment_lro_profilo" >
+        <action
+            android:id="@+id/action_lroProfiloFragment_to_reviewListFragment"
+            app:destination="@id/reviewListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/impostazioniProfiloFragment"
+        android:name="com.example.verbose.ui.mainApp.ImpostazioniProfiloFragment"
+        android:label="fragment_impostazioni_profilo"
+        tools:layout="@layout/fragment_impostazioni_profilo" />
+    <fragment
+        android:id="@+id/addAppointmentFragment"
+        android:name="com.example.verbose.ui.mainApp.AddAppointmentFragment"
+        android:label="fragment_add_appointment"
+        tools:layout="@layout/fragment_add_appointment" />
+    <fragment
+        android:id="@+id/reviewListFragment"
+        android:name="com.example.verbose.ui.mainApp.ReviewListFragment"
+        android:label="fragment_review_list"
+        tools:layout="@layout/fragment_review_list" />
+</navigation>
