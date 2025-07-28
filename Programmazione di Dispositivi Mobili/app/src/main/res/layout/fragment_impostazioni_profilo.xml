@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.mainApp.ImpostazioniProfiloFragment">
+
+    <TextView
+        android:id="@+id/text_view_impostazioni_profilo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:padding="20dp"
+        android:text="@string/settings_title"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/privacy_disclamer"
+        android:textColor="#848181"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_impostazioni_profilo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <TextView
+        android:id="@+id/text_view_notifiche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/enable_notifications"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/switch_notifiche"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_notifiche"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_notifiche"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toEndOf="@+id/text_view_notifiche"
+        app:layout_constraintTop_toTopOf="@+id/text_view_notifiche"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/text_view_lingua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/select_language"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_cambia_lingua"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/switch_notifiche" />
+
+    <Spinner
+        android:id="@+id/spinner_cambia_lingua"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:entries="@array/languages"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_lingua"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_view_lingua"
+        app:layout_constraintTop_toTopOf="@+id/text_view_lingua" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

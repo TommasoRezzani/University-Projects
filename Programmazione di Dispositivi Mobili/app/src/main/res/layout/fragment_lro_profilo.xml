@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.mainApp.LroProfiloFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view_lro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <TextView
+                android:id="@+id/text_view_lro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:padding="20dp"
+                android:text="@string/lista_ripetizioni_offerte"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/toggleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/background_color"
+                android:backgroundTint="@color/background_color"
+                android:padding="0dp"
+                app:cardBackgroundColor="@color/background_color"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline16"
+                app:layout_constraintStart_toStartOf="@+id/guideline15"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_lro"
+                app:strokeColor="@android:color/transparent"
+                app:strokeWidth="0dp">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:backgroundTint="@color/background_color"
+                    app:tabIconTint="@color/tab_icon_selector"
+                    app:tabIndicator="@drawable/tab_selector"
+                    app:tabIndicatorAnimationMode="linear"
+                    app:tabIndicatorFullWidth="true"
+                    app:tabIndicatorGravity="stretch"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@android:color/transparent"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabTextColor="@android:color/black">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/open_repetitions__btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/open_repetition_icon"
+                        android:text="@string/open" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/closed_repetitions_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/closed_repetition_icon"
+                        android:text="@string/closed" />
+
+                </com.google.android.material.tabs.TabLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_lro"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
