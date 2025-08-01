@@ -1,7 +1,7 @@
 ## Programmazione di Dispositivi Mobili
 
-## Objectives
+### Objectives
 By the end of the course, students will be able to develop Android applications while paying attention to user experience aspects.
 
-## Course Overview
+### Course Overview
 Design and development of mobile applications. User interface design. Development of applications for Android devices.
